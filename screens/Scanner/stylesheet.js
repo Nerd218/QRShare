@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
         width:250,
         height:40,
         borderRadius:10,
-        marginTop:150
+        marginTop:10
     },
     qrText:{
         alignSelf:'center',
@@ -52,5 +52,19 @@ export const styles = StyleSheet.create({
       },
       buttonTouchable: {
         padding: 16
-      }
+      },
+      flashView:{
+        borderRadius:20,
+        height:20,
+        width:20,
+        borderWidth:1,
+        padding: 30,
+        alignSelf:'center',
+        alignContent:'center',
+        fontSize:30,
+        fontWeight:'bold',
+        marginTop:150,
+        backgroundColor:'blue'
+    },
+    
 })

@@ -44,7 +44,10 @@ export const styles = StyleSheet.create({
     },
     textBox:{
         margin: 20,
-        padding:20
+        padding:20,
+        borderRadius:10,
+        borderWidth:1,
+        borderColor:'blue'
     },
     colorViewPink:{
         borderRadius:20,

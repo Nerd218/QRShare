@@ -46,11 +46,11 @@ class Generator extends React.Component {
             <TextInput
               style={styles.textBox}
               placeholder='Enter something'
+              placeholderTextColor={'black'}
               onChangeText={(textvalues) => this.setState({ textinput: textvalues })} />
           </View>
           <View style={styles.colorView}>
             <TouchableOpacity onPress={() => this.changeColor('#f15f7d')}>
-              {/* <Text>Click</Text> */}
               <View style={styles.colorViewPink}></View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => this.changeColor('#f25fe7')}>

@@ -7,6 +7,7 @@ class Splash extends React.Component{
     componentDidMount(){
         setTimeout(() => {
             this.props.navigation.navigate("Generator")
+
         },3000)
     }
 

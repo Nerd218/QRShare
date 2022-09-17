@@ -14,6 +14,13 @@ class Scanner extends React.Component {
         this.setState({ result: e.data })
         console.log(e.data)
     };
+    flashOnOff(){
+        if(this.state.isFlashOn){
+            this.setState({isFlashOn: false})
+        }else{
+            this.setState({isFlashOn: true})
+        }
+    }
     render() {
         return (
             <SafeAreaView>
@@ -27,6 +34,11 @@ class Scanner extends React.Component {
                             reactivateTimeout={10000}
                             flashMode={this.state.isFlashOn ? RNCamera.Constants.FlashMode.torch : null}
                         />
+                        <TouchableOpacity
+                        style={styles.flashView}
+                        onPress={()=>{this.flashOnOff()}}>
+                            <View ><Text style={styles.flashText}>Flash</Text></View>
+                        </TouchableOpacity>
                         <TouchableOpacity
                             style={styles.scanBtn}
                             onPress={() => this.props.navigation.pop()}>
