@@ -13,21 +13,22 @@ export const styles = StyleSheet.create({
     },
     qrcode:{
         alignSelf:'center',
-        borderColor:"blue",
+        borderColor:"cyan",
         borderRadius:30,
         borderWidth:5,
         padding:50,
-        width:250,
-        height:200,
-        marginTop:50
+        width:200,
+        height:150,
+        marginTop:80
     },
     scanBtn:{
         alignSelf:'center',
-        backgroundColor:'blue',
+        backgroundColor:'cyan',
         width:250,
         height:40,
         borderRadius:10,
-        marginTop:10
+        marginTop:10,
+        elevation:3
     },
     qrText:{
         alignSelf:'center',
@@ -55,16 +56,15 @@ export const styles = StyleSheet.create({
       },
       flashView:{
         borderRadius:20,
-        height:20,
-        width:20,
+        height:25,
+        width:25,
         borderWidth:1,
-        padding: 30,
+        backgroundColor:'cyan',
+        elevation:5,
         alignSelf:'center',
-        alignContent:'center',
-        fontSize:30,
-        fontWeight:'bold',
+        borderWidth:1,
         marginTop:150,
-        backgroundColor:'blue'
+       
     },
-    
+ 
 })

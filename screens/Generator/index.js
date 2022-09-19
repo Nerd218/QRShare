@@ -34,19 +34,23 @@ class Generator extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <View>
+        <View style ={styles.container}>
           <Text style={styles.title}>Generate QRCode</Text>
+          <TouchableOpacity onPress={()=>{alert("Clicked")}}
+                    style={styles.helpBtn}>
+                        <View><Text style={styles.helpText}>?</Text></View>
+                    </TouchableOpacity>
           <View style={styles.qrcode}>
             <QRCode
               value={this.state.qrValue.toString()}
-              size={250} color={this.state.qrColor} backgroundColor='white'>
+              size={200} color={this.state.qrColor} backgroundColor='white'>
             </QRCode>
           </View>
           <View>
             <TextInput
               style={styles.textBox}
               placeholder='Enter something'
-              placeholderTextColor={'black'}
+              
               onChangeText={(textvalues) => this.setState({ textinput: textvalues })} />
           </View>
           <View style={styles.colorView}>

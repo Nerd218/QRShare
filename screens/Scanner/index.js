@@ -26,6 +26,7 @@ class Scanner extends React.Component {
             <SafeAreaView>
                 <ScrollView>
                     <View><Text style={styles.title}>Scanner </Text>
+                   
 
                         <QRCodeScanner
                             cameraStyle={styles.qrcode}
@@ -37,7 +38,7 @@ class Scanner extends React.Component {
                         <TouchableOpacity
                         style={styles.flashView}
                         onPress={()=>{this.flashOnOff()}}>
-                            <View ><Text style={styles.flashText}>Flash</Text></View>
+                            {/* <View ><Text style={styles.flashText}>Flash</Text></View> */}
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={styles.scanBtn}
