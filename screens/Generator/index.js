@@ -36,7 +36,7 @@ class Generator extends React.Component {
       <SafeAreaView>
         <View style ={styles.container}>
           <Text style={styles.title}>Generate QRCode</Text>
-          <TouchableOpacity onPress={()=>{alert("Clicked")}}
+          <TouchableOpacity onPress={()=>{alert("How to use?\n 1.Enter the text inside the textbox\n 2. To generate qr click on Generate qr button.\n 3. Take Screen shot of your qr code and share\n 4.Scan the qr and you will get the content. Copy and use it.")}}
                     style={styles.helpBtn}>
                         <View><Text style={styles.helpText}>?</Text></View>
                     </TouchableOpacity>
@@ -51,7 +51,6 @@ class Generator extends React.Component {
               style={styles.textBox}
               placeholder='Enter something'
               placeholderTextColor={'black'}
-              
               onChangeText={(textvalues) => this.setState({ textinput: textvalues })} />
           </View>
           <View style={styles.colorView}>
