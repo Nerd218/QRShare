@@ -55,6 +55,8 @@ export const styles = StyleSheet.create({
         borderRadius:10,
         borderWidth:.5,
         borderColor:'black',
+        color:'black',
+        
         
     },
     colorViewPink:{

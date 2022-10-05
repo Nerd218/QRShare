@@ -50,6 +50,7 @@ class Generator extends React.Component {
             <TextInput
               style={styles.textBox}
               placeholder='Enter something'
+              placeholderTextColor={'black'}
               
               onChangeText={(textvalues) => this.setState({ textinput: textvalues })} />
           </View>
