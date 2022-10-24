@@ -6,7 +6,7 @@ import { View, Text, Image,StatusBar } from 'react-native';
 class Splash extends React.Component {
     componentDidMount() {
         setTimeout(() => {
-            this.props.navigation.navigate("Generator")
+            this.props.navigation.replace("Generator")
         },3000)
     }
 
